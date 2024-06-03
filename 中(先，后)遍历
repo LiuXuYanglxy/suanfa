@@ -1,0 +1,24 @@
+class Solution{
+  public List<Integer> inorderTraversal(TreeNode root){
+    List<interger> res = new LinkedList<>();
+    inorder(res,root);
+    return res;
+  }
+  void inorder(List<Intrger> res,TreeNode root){
+    if(root == null){
+      return;
+    }
+    //中序遍历
+    inorder(res,root.left);
+    inorder(res.val);
+    inorder(res,root.right);
+    //先序遍历
+    //inorder(res.val); 
+    //inorder(res,root.left);
+    //inorder(res,root.right);
+    //后序遍历
+    //inorder(res,root.left);
+    //inorder(res,root.right);
+    //inorder(res.val); 
+  }
+}
